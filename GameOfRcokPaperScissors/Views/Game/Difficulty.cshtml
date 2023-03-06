@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Difficulty";
+     Layout = "~/Views/Shared/_Layout.cshtml";
+}
+ <!-- Coundt figure out how to make this easier wanted to do a if statment with in the controller function , defintly would look at making the difficulty tidier using less code did this last, definlty things i can improve on  -->
+<div class="text-center">
+    <h1 class="display-4 fw-bold text-dark">Choose your difficulty</h1>
+</div>
+
+
+<body class="bg-primary text-center container ">
+
+
+<div class="text-center">
+    <a class="btn btn-secondary" asp-controller="Game" asp-action="DifficultySelection" asp-route-Difficulty="0">Easy</a>
+
+    <a class="btn btn-secondary" asp-controller="Game" asp-action="DifficultySelection" asp-route-Difficulty="1">Medium</a>
+
+<a class="btn btn-secondary" asp-controller="Game" asp-action="DifficultySelection" asp-route-Difficulty="2">Hard</a>
+    
+</div>
+
+</body>

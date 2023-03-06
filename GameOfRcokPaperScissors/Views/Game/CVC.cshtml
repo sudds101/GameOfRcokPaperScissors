@@ -1,0 +1,49 @@
+﻿@model GameOfRcokPaperScissors.Models.Game
+
+@{
+    ViewData["Title"] = "CVC";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<div class="fw-bold text-dark text-md-center">
+    <h1>Rock Paper Scissor (Player vs Computer)</h1>
+</div>
+
+
+<body class="bg-primary container">
+
+
+    <div class="container text-center">
+     @if (@ViewBag.Message == "It's a draw"){
+         <h2 class="text-warning">@ViewBag.Message</h2>
+     }
+        else if (@ViewBag.Message == "The Winner is Computer 1"){
+         <h2 class="text-success">@ViewBag.Message</h2>
+     }
+        else{
+             <h2 class="text-danger">@ViewBag.Message</h2>
+    
+        }
+      
+     
+    </div>
+<div class="container text-center">
+        <h3>@ViewBag.Choices</h3>
+
+</div>
+        <div class="container text-center">
+
+    <form asp-controller="Game" asp-action=CompVSComp>
+        <button type="submit" class="top-buffer btn btn-secondary" > Computer Fight</button>
+    </form>
+</div>
+
+
+</body>
+
+
+    <button style = "position:fixed; top:200px;" class=" btn btn-secondary " onclick="window.location.href='/';">
+        Home
+    </button>
+

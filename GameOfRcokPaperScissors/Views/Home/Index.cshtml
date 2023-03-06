@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="text-center container">
+    <h1 class="display-4 fw-bolder text-success">Welcome to Rock Paper scissor</h1>
+</div>
+
+<body class="bg-primary text-center container ">
+
+    <div>
+        <img src="~/img/paper.png.png" width="150px" />
+        <img src="~/img/rock.png.png" width="150px" />
+        <img src="~/img/scissors.png.png" height="100" width="150px" />
+    </div>
+   
+    <button class="btn btn-secondary " onclick="window.location.href='/Game/CVC';">
+        Computer vs Computer
+    </button>
+
+    <button class="btn btn-secondary" onclick="window.location.href='/Game/Difficulty';">
+        Player vs Computer
+    </button>
+
+</body>
+
